@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 from sklearn.svm import SVC
@@ -21,7 +22,7 @@ CORS(app)
 print('Server running...')
 
 # Path to the dataset
-csv_file_path = r'C:\Users\USER\Documents\spam_dataset\archive\spam.csv'
+csv_file_path = os.path.join(os.path.dirname(__file__), 'data', 'spam.csv')
 
 # Load and prepare the dataset
 def load_dataset():
