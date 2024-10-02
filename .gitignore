@@ -1,0 +1,7 @@
+ml_server/
+
+.env
+
+__pycache__/
+*.py[cod]
+*.pyo
