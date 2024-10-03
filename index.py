@@ -16,7 +16,7 @@ from flask_cors import CORS
 
 # Flask setup
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Print statements for server startup
 print('Server running...')
